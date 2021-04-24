@@ -1,0 +1,35 @@
+.dailyDisplay {
+    display: flex;
+    border: 1px solid #ededed;
+    align-items: center;
+    padding: 12px;
+    border-radius: 2px;
+    margin-top: 14px;
+    padding-bottom: 12px;
+
+
+    flexWrap: 'wrap',
+}
+
+.time {
+    margin-right: 24px;
+}
+
+.temp {
+    margin-right: 24px
+}
+
+.main2 {
+    font-weight: 650;
+    margin: 0;
+    margin-right: 12px;
+    margin-left: 12px;
+    padding: 0;
+    color: #575757;
+}
+
+.desc {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
