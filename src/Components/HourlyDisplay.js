@@ -7,7 +7,6 @@ const HourlyDisplay = ({ temp, main, time }) => {
     const [icon, setIcon] = useState("")
 
     useEffect(() => {
-        console.log("HERE")
         setIcon(chooseIcon(main))
     }, [])
     return (

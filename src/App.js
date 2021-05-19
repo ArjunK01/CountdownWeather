@@ -56,7 +56,6 @@ function App() {
   }, [coordinates])
 
   useEffect(() => {
-    console.log(weather)
     if (weather) {
       let temp = []
       temp.push(weather.coord.lon)
@@ -66,7 +65,7 @@ function App() {
   }, [weather])
 
   useEffect(() => {
-    console.log(hourly)
+    // console.log(hourly)
   }, [hourly])
 
   return (

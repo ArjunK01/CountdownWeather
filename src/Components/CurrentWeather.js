@@ -8,11 +8,10 @@ const CurrentWeather = ({ temp, desc, type }) => {
 
     const [icon, setIcon] = useState("")
     useEffect(() => {
-        console.log(desc)
+        // console.log(desc)
     }, [])
 
     useEffect(() => {
-        console.log("TYPE", type)
         switch (type) {
             case "Clear":
                 setIcon(<WbSunnyIcon />)
