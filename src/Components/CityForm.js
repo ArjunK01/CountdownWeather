@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import './form.css'
+import '../styles/form.css'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 

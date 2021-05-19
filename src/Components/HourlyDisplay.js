@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "./hourlyDisplay.css"
+import "../styles/hourlyDisplay.css"
 
 import chooseIcon from './IconFunc.js'
 

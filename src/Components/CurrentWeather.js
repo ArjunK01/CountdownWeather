@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import "./current.css"
+import "../styles/current.css"
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import CloudIcon from '@material-ui/icons/Cloud';
 import InvertColorsIcon from '@material-ui/icons/InvertColors';

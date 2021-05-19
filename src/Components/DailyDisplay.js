@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './dailyDisplay.css'
+import '../styles/dailyDisplay.css'
 import chooseIcon from './IconFunc'
 
 const DailyDisplay = ({ highTemp, lowTemp, main, time, description }) => {

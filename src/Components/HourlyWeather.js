@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import HourlyDisplay from './HourlyDisplay'
-import './hourly.css'
+import '../styles/hourly.css'
 
 const HourlyWeather = ({hourly}) => {
 
