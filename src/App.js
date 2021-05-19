@@ -77,9 +77,9 @@ function App() {
         </div>
         <CityForm changeCity={changeCity} />
       </div>
-      {weather ? <CurrentWeather temp={weather.main.temp} desc={weather.weather[0].description} type={weather.weather[0].main} /> : null}
+      {weather && <CurrentWeather temp={weather.main.temp} desc={weather.weather[0].description} type={weather.weather[0].main} />}
       {/* {hourly ? <pre>{JSON.stringify(hourly, undefined, 4)}</pre> : null} */}
-      {hourly ?
+      {hourly &&
         <div style={{ display: "flex" }}>
           <div onClick={() => setToggle(false)} style={{ marginRight: "24px", cursor: "pointer" }}>
             <h3 style={{ marginBottom: "8px", color: !toggle ? "black" : "grey" }}>
@@ -88,10 +88,9 @@ function App() {
           </div>
           <div onClick={() => setToggle(true)} style={{ cursor: "pointer" }}>
             <h3 style={{ marginBottom: "8px", color: !toggle ? "grey" : "black" }}>DAILY WEATHER </h3>
-          </div> </div>
-        : null}
+          </div> </div>}
       {
-        toggle ? (hourly ? <DailyWeather daily={hourly.daily} /> : null) : (hourly ? <HourlyWeather hourly={hourly.hourly} /> : null)
+        toggle ? (hourly && <DailyWeather daily={hourly.daily} />) : (hourly && <HourlyWeather hourly={hourly.hourly} />)
       }
     </div>
   );
