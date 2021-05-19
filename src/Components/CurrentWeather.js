@@ -1,30 +1,31 @@
-import React, { useState, useEffect } from 'react'
+import React, { /*useState,*/ useEffect } from 'react'
 import "../styles/current.css"
-import WbSunnyIcon from '@material-ui/icons/WbSunny';
-import CloudIcon from '@material-ui/icons/Cloud';
-import InvertColorsIcon from '@material-ui/icons/InvertColors';
+// import WbSunnyIcon from '@material-ui/icons/WbSunny';
+// import CloudIcon from '@material-ui/icons/Cloud';
+// import InvertColorsIcon from '@material-ui/icons/InvertColors';
 
-const CurrentWeather = ({ temp, desc, type }) => {
+const CurrentWeather = ({ temp, desc, /*type*/ }) => {
 
-    const [icon, setIcon] = useState("")
+    // const [icon, setIcon] = useState("");
     useEffect(() => {
         // console.log(desc)
     }, [])
 
-    useEffect(() => {
-        switch (type) {
-            case "Clear":
-                setIcon(<WbSunnyIcon />)
-                break;
-            case "Clouds":
-                setIcon(<CloudIcon />)
-                break;
-            case "Rain":
-                setIcon(<InvertColorsIcon />)
-                break
+    // useEffect(() => {
+    //     switch (type) {
+    //         case "Clear":
+    //             setIcon(<WbSunnyIcon />)
+    //             break;
+    //         case "Clouds":
+    //             setIcon(<CloudIcon />)
+    //             break;
+    //         case "Rain":
+    //             setIcon(<InvertColorsIcon />)
+    //             break
 
-        }
-    }, [])
+    //     }
+    // }, [])
+
     return (
         <div>
 
@@ -34,7 +35,7 @@ const CurrentWeather = ({ temp, desc, type }) => {
                 <p className="temp"><span style={{ fontSize: "32px", fontWeight: "bold" }}> {temp}°</span> farenheit</p>
                 <p className="desc">{desc.toUpperCase()}</p>
             </div>
-            <hr class="solid"></hr>
+            <hr class="solid"/>
 
 
         </div>
